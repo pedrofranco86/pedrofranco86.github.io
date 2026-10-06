@@ -1,0 +1,1 @@
+// Número de contacto de Pedro Franco const TELEFONO\_PEDRO = "5493804596579"; function contactarWhatsApp(mensajePersonalizado) { const url = \`https://wa.me/${TELEFONO\_PEDRO}?text=${encodeURIComponent(mensajePersonalizado)}\`; window.open(url, '\_blank'); }
