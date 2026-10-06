@@ -3,92 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedro Franco | Creador de Sitios Web para Emprendedores</title>
+    <title>Pedro Franco | Creador de Sitios Web & Catálogos Digitales</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Encabezado -->
+    <!-- Cinta de Anuncio -->
+    <div class="announcement-bar">
+        <span>🚀 SITIOS WEB & CATÁLOGOS DIGITALES • ENTREGA EN 5 DÍAS</span>
+    </div>
+
+    <!-- Encabezado / Bio Creador -->
     <header class="header">
         <div class="container header-content">
-            <a href="#" class="logo">Pedro<span>Franco</span></a>
-            <p class="tagline">Sitios Web para Emprendedores</p>
+            <div class="profile-group">
+                <img src="https://github.com/pedrofranco86.png" alt="Pedro Franco" class="profile-avatar" onerror="this.src='https://ui-avatars.com/api/?name=Pedro+Franco&background=0284c7&color=fff&size=128'">
+                <div class="profile-info">
+                    <h1 class="logo">Pedro Franco</h1>
+                    <p class="profile-tag">Desarrollador Web & Estratega Digital</p>
+                </div>
+            </div>
+            <a href="https://wa.me/5493804596579?text=Hola%20Pedro!%20Quiero%20consultar%20por%20un%20sitio%20web." target="_blank" class="btn-header">Contactar</a>
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero / Presentación -->
     <section class="hero">
         <div class="container">
-            <span class="badge-hero">🚀 Impulsa tu negocio en internet</span>
-            <h2>Diseño sitios web que convierten visitantes en <span>clientes</span></h2>
-            <p>Páginas modernas, rápidas y optimizadas para celulares. La herramienta perfecta para exhibir tus productos y recibir pedidos directo a tu WhatsApp.</p>
-            <div class="hero-buttons">
-                <button class="btn-primary" onclick="contactarWhatsApp('Hola Pedro! Quiero consultar por una página web para mi negocio.')">💬 Consultar por WhatsApp</button>
+            <span class="badge-tag">Mente Digital & Ventas Directas</span>
+            <h2>Transformo tu negocio en una <span>marca digital</span> con flujo de clientes a WhatsApp</h2>
+            <p>Diseño sitios web, catálogos interactivos y páginas de venta optimizadas para que no pierdas tiempo enviando fotos y precios manualmente.</p>
+        </div>
+    </section>
+
+    <!-- Cuestionario de Autodiagnóstico Estilo Dan Koe -->
+    <section class="diagnostic container">
+        <div class="diagnostic-box">
+            <h3 class="diagnostic-title">📍 Diagnóstico Rápido: ¿En qué etapa se encuentra tu negocio?</h3>
+            <p class="diagnostic-subtitle">Selecciona la opción que mejor describa tu situación actual para ver la recomendación ideal:</p>
+
+            <div class="diagnostic-options">
+                <a href="https://wa.me/5493804596579?text=Hola%20Pedro!%20Actualmente%20vendo%20por%20redes%20sociales%20pero%20no%20tengo%20p%C3%A1gina%20web.%20Quiero%20asesor%C3%ADa." target="_blank" class="option-card">
+                    <div class="option-number">01</div>
+                    <div class="option-text">
+                        <h4>Vendo por redes pero no tengo sitio web</h4>
+                        <p>Necesitas una página de presentación profesional para generar confianza inmediata.</p>
+                    </div>
+                    <span class="option-arrow">→</span>
+                </a>
+
+                <a href="https://wa.me/5493804596579?text=Hola%20Pedro!%20Pierdo%20mucho%20tiempo%20enviando%20precios%20y%20fotos%20por%20chat.%20Quiero%20un%20cat%C3%A1logo." target="_blank" class="option-card">
+                    <div class="option-number">02</div>
+                    <div class="option-text">
+                        <h4>Envío precios y fotos manualmente por chat</h4>
+                        <p>Necesitas un catálogo web interactivo donde el cliente elija y te envíe el pedido armado.</p>
+                    </div>
+                    <span class="option-arrow">→</span>
+                </a>
+
+                <a href="https://wa.me/5493804596579?text=Hola%20Pedro!%20Quiero%20un%20sitio%20web%20completo%20de%20alta%20conversi%C3%B3n%20para%20mi%20marca." target="_blank" class="option-card">
+                    <div class="option-number">03</div>
+                    <div class="option-text">
+                        <h4>Quiero escalar mi marca con un sitio completo</h4>
+                        <p>Landing page o tienda a medida lista para campañas publicitarias y ventas masivas.</p>
+                    </div>
+                    <span class="option-arrow">→</span>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Beneficios / Por qué elegirme -->
-    <section class="benefits container">
-        <div class="benefits-grid">
-            <div class="benefit-card">
-                <div class="benefit-icon">📱</div>
-                <h3>100% Adaptado a Celulares</h3>
-                <p>Tu web se verá perfecta en teléfonos, tablets y computadoras.</p>
-            </div>
-            <div class="benefit-card">
-                <div class="benefit-icon">⚡</div>
-                <h3>Carga Ultra Rápida</h3>
-                <p>Sitios optimizados para que tus clientes no esperen ni un segundo.</p>
-            </div>
-            <div class="benefit-card">
-                <div class="benefit-icon">📲</div>
-                <h3>Pedidos por WhatsApp</h3>
-                <p>Los clientes eligen tus productos y te consultan directamente a tu chat.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Servicios -->
-    <section class="services container">
-        <h2 class="section-title">Servicios a tu medida</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon">🌐</div>
+    <!-- Bloques Temáticos / Soluciones -->
+    <section class="solutions container">
+        <h2 class="section-title">Soluciones Digitales</h2>
+        <div class="solutions-grid">
+            <div class="solution-card">
+                <div class="card-header-icon">🌐</div>
                 <h3>Páginas Web Corporativas</h3>
-                <p>Presenta tu marca, servicios, historia y formas de contacto de manera profesional e impactante.</p>
+                <p>Presenta tu marca, historia, servicios y contacto en un diseño elegante que transmite autoridad.</p>
+                <a href="https://wa.me/5493804596579?text=Hola%20Pedro!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20P%C3%A1ginas%20Web%20Corporativas." target="_blank" class="card-link">Consultar solución →</a>
             </div>
-            <div class="service-card">
-                <div class="service-icon">🛍️</div>
-                <h3>Catálogos Digitales</h3>
-                <p>Muestra todos tus productos organizados con fotos, detalles y precios actualizados.</p>
+
+            <div class="solution-card featured-card">
+                <div class="featured-badge">Más Elegido</div>
+                <div class="card-header-icon">🛍️</div>
+                <h3>Catálogos Web con WhatsApp</h3>
+                <p>Muestra todos tus productos organizados con imágenes y precios. El cliente arma su pedido y lo envía a tu chat.</p>
+                <a href="https://wa.me/5493804596579?text=Hola%20Pedro!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20Cat%C3%A1logo%20Web%20con%20WhatsApp." target="_blank" class="card-link">Consultar solución →</a>
             </div>
-            <div class="service-card">
-                <div class="service-icon">🚀</div>
+
+            <div class="solution-card">
+                <div class="card-header-icon">🚀</div>
                 <h3>Landing Pages de Venta</h3>
-                <p>Páginas enfocadas en promocionar un producto o servicio específico para maximizar consultas.</p>
+                <p>Páginas enfocadas en un solo producto o servicio diseñadas para maximizar conversiones y consultas.</p>
+                <a href="https://wa.me/5493804596579?text=Hola%20Pedro!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Landing%20Pages." target="_blank" class="card-link">Consultar solución →</a>
             </div>
         </div>
     </section>
 
-    <!-- Portafolio -->
+    <!-- Portafolio / Trabajo en Progreso -->
     <section class="portfolio container">
         <h2 class="section-title">Proyectos Destacados</h2>
         <div class="portfolio-grid">
             <div class="portfolio-card">
-                <div class="card-badge badge-dev">En Desarrollo</div>
+                <span class="status-tag status-dev">En Desarrollo</span>
                 <h3>🏇 Talabartería & Equitación</h3>
-                <p>Catálogo web de equipamiento hípico con fotos en alta calidad, precios y sistema de pedidos directo a WhatsApp con integración de pagos.</p>
+                <p>Catálogo web exclusivo para equipamiento hípico con fotos en alta definición, selección de talles y pedidos directos a WhatsApp con medios de pago integrados.</p>
             </div>
 
-            <div class="portfolio-card placeholder-card">
-                <div class="card-badge badge-avail">Disponible</div>
-                <h3>✨ Tu Próximo Sitio Web</h3>
-                <p>¿Tienes un proyecto en mente? Creamos la web de tu negocio lista para recibir clientes.</p>
-                <button class="btn-secondary" onclick="contactarWhatsApp('Hola Pedro! Me gustaría crear la página de mi proyecto.')">Iniciar mi sitio web</button>
+            <div class="portfolio-card next-card">
+                <span class="status-tag status-next">Disponible</span>
+                <h3>✨ Tu Próximo Proyecto</h3>
+                <p>¿Tienes una marca o emprendimiento? Diseñamos tu espacio digital con la mejor experiencia para tus clientes.</p>
+                <a href="https://wa.me/5493804596579?text=Hola%20Pedro!%20Quiero%20ser%20el%20pr%C3%B3ximo%20proyecto%20web." target="_blank" class="btn-primary-block">Iniciar mi proyecto</a>
             </div>
         </div>
     </section>
@@ -98,37 +128,49 @@
         <h2 class="section-title">Preguntas Frecuentes</h2>
         <div class="faq-list">
             <div class="faq-item">
-                <button class="faq-question" onclick="toggleFaq(this)">¿Cuánto tiempo tarda en estar lista mi web? <span>+</span></button>
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>¿Cuánto tiempo demora la entrega?</span>
+                    <span class="faq-icon">+</span>
+                </button>
                 <div class="faq-answer">
-                    <p>Por lo general, un sitio web básico o catálogo está listo entre 3 y 7 días hábiles, dependiendo de la cantidad de información e imágenes que necesitemos subir.</p>
+                    <p>Un sitio web o catálogo básico se entrega en un plazo estimado de 3 a 5 días hábiles desde que recibo el contenido (fotos y textos).</p>
                 </div>
             </div>
+
             <div class="faq-item">
-                <button class="faq-question" onclick="toggleFaq(this)">¿Necesito tener conocimientos técnicos? <span>+</span></button>
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>¿Cómo llegan los pedidos a mi WhatsApp?</span>
+                    <span class="faq-icon">+</span>
+                </button>
                 <div class="faq-answer">
-                    <p>¡Para nada! Yo me encargo de todo el proceso de diseño y publicación. Tú solo te preocupas por atender a tus nuevos clientes.</p>
+                    <p>El cliente explora tu web, selecciona los artículos o servicios de su interés y hace clic en "Consultar / Pedir". Se abre automáticamente WhatsApp con un mensaje predeterminado con todo el detalle listo para enviar.</p>
                 </div>
             </div>
+
             <div class="faq-item">
-                <button class="faq-question" onclick="toggleFaq(this)">¿Cómo recibo los pedidos de los clientes? <span>+</span></button>
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>¿Tengo que pagar mantenimiento mensual?</span>
+                    <span class="faq-icon">+</span>
+                </button>
                 <div class="faq-answer">
-                    <p>Integró un botón directo a tu WhatsApp. Cuando el cliente hace clic, se abre una conversación contigo con el detalle del producto o consulta.</p>
+                    <p>No. El desarrollo y la publicación en GitHub Pages son de pago único. Si en el futuro deseas actualizar productos o modificar secciones, puedes consultarme en cualquier momento.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pie de página -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p><strong>Pedro Franco</strong> &bull; Creador de Sitios Web para Emprendedores</p>
-            <p>📱 Contacto directo: <strong>3804596579</strong></p>
-            <p>&copy; 2026. Alojado gratis en GitHub Pages.</p>
+            <p class="footer-title">Pedro Franco</p>
+            <p>Desarrollo Web & Estrategias para Emprendedores</p>
+            <p class="footer-contact">📱 WhatsApp directo: <strong>+54 9 380 459-6579</strong></p>
+            <p class="footer-copy">&copy; 2026 Pedro Franco. Todos los derechos reservados.</p>
         </div>
     </footer>
 
     <!-- Botón Flotante de WhatsApp -->
-    <a href="javascript:void(0)" class="whatsapp-float" onclick="contactarWhatsApp('Hola Pedro! Vi tu página web y quiero hacerte una consulta.')" title="Contactar por WhatsApp">
+    <a href="https://wa.me/5493804596579?text=Hola%20Pedro!%20Estaba%20viendo%20tu%20sitio%20web%20y%20quiero%20hacerte%20una%20consulta." target="_blank" class="whatsapp-float" title="Contactar por WhatsApp">
         <svg viewBox="0 0 32 32" class="whatsapp-icon">
             <path fill="currentColor" d="M16 2a13 13 0 0 0-11 20l-2 6 6-2a13 13 0 1 0 7-24zm0 24a11 11 0 0 1-6-1.7l-.4-.2-3.6 1 1-3.5-.3-.5A11 11 0 1 1 16 26zm6-8c-.3-.2-1.8-.9-2.1-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a9 9 0 0 1-2.6-1.6 10 10 0 0 1-1.8-2.3c-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.4.3-.6s0-.4-.1-.5l-.9-2.2c-.3-.7-.5-.6-.7-.6h-.6c-.2 0-.6.1-.9.4s-1.2 1.2-1.2 2.9 1.2 3.4 1.4 3.6 2.4 3.7 5.8 5.2c.8.3 1.4.6 1.9.7.8.3 1.5.2 2.1.1.7-.1 2.1-.8 2.4-1.7s.3-1.6.2-1.7c-.1-.2-.3-.3-.6-.5z"/>
         </svg>
