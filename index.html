@@ -1,1 +1,73 @@
-\* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; } body { background-color: #0f172a; color: #f8fafc; line-height: 1.6; } .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; } .header { background-color: #1e293b; padding: 25px 0; border-bottom: 2px solid #334155; text-align: center; } .logo { font-size: 2.2rem; color: #38bdf8; font-weight: 700; } .tagline { font-size: 1.1rem; color: #94a3b8; margin-top: 5px; } .hero { text-align: center; padding: 60px 20px; background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%); } .hero h2 { font-size: 2.2rem; color: #ffffff; max-width: 800px; margin: 0 auto 15px; } .hero p { font-size: 1.15rem; color: #cbd5e1; max-width: 700px; margin: 0 auto 30px; } .section-title { text-align: center; font-size: 1.8rem; color: #38bdf8; margin: 50px 0 30px; } .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; } .service-card { background-color: #1e293b; padding: 30px; border-radius: 12px; border: 1px solid #334155; transition: transform 0.2s ease; } .service-card:hover { transform: translateY(-5px); } .service-card h3 { color: #f1f5f9; font-size: 1.25rem; margin-bottom: 12px; } .service-card p { color: #94a3b8; font-size: 0.95rem; } .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; margin-bottom: 60px; } .portfolio-card { background-color: #1e293b; padding: 30px; border-radius: 12px; border: 1px solid #334155; position: relative; display: flex; flex-direction: column; } .card-badge { position: absolute; top: 15px; right: 15px; background-color: #0284c7; color: #ffffff; font-size: 0.75rem; padding: 4px 10px; border-radius: 20px; font-weight: bold; text-transform: uppercase; } .portfolio-card h3 { color: #ffffff; font-size: 1.3rem; margin-bottom: 12px; margin-top: 10px; } .portfolio-card p { color: #cbd5e1; font-size: 0.95rem; margin-bottom: 20px; flex-grow: 1; } .placeholder-card { border: 2px dashed #0284c7; background-color: rgba(30, 41, 59, 0.5); } .btn-primary { background-color: #25d366; color: #ffffff; border: none; padding: 14px 28px; font-size: 1.05rem; font-weight: bold; border-radius: 8px; cursor: pointer; transition: background-color 0.2s ease; } .btn-primary:hover { background-color: #1eb853; } .btn-secondary { background-color: #0284c7; color: #ffffff; border: none; padding: 10px 20px; font-size: 0.95rem; font-weight: bold; border-radius: 6px; cursor: pointer; transition: background-color 0.2s ease; width: 100%; } .btn-secondary:hover { background-color: #0369a1; } .footer { background-color: #020617; padding: 30px 0; text-align: center; color: #64748b; border-top: 1px solid #1e293b; font-size: 0.95rem; } .footer p { margin-bottom: 5px; }
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Franco | Creador de Sitios Web para Emprendedores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <h1 class="logo">Pedro Franco</h1>
+            <p class="tagline">Creador de Sitios Web para Emprendedores</p>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Lleva tu negocio al siguiente nivel con tu propia página web</h2>
+            <p>Diseño y creo sitios web modernos, rápidos y optimizados para que exhibas tus productos o servicios en internet de forma profesional.</p>
+            <button class="btn-primary" onclick="contactarWhatsApp('Hola Pedro! Me gustaría consultar por una página web para mi negocio.')">Consultar por WhatsApp</button>
+        </div>
+    </section>
+
+    <section class="services container">
+        <h2 class="section-title">¿Cómo puedo ayudarte?</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>🌐 Páginas Web para Negocios</h3>
+                <p>Diseño de sitios atractivos y adaptados a teléfonos móviles para presentar tu marca o emprendimiento.</p>
+            </div>
+            <div class="service-card">
+                <h3>🛍️ Catálogos de Productos</h3>
+                <p>Muestra tus productos con fotos, descripciones y precios claros para tus clientes.</p>
+            </div>
+            <div class="service-card">
+                <h3>📲 Pedidos por WhatsApp</h3>
+                <p>Integración de botones directos para que los clientes te envíen sus pedidos y consultas a tu chat.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio container">
+        <h2 class="section-title">Proyectos & Portafolio</h2>
+        <div class="portfolio-grid">
+            <!-- Proyecto 1 -->
+            <div class="portfolio-card">
+                <div class="card-badge">En Desarrollo</div>
+                <h3>🏇 Talabartería & Equitación</h3>
+                <p>Tienda web con catálogo de equipamiento hípico, fotos de productos e integración para recibir pedidos por WhatsApp con pagos por Mercado Pago y transferencia.</p>
+            </div>
+
+            <!-- Placeholder Próximo Proyecto -->
+            <div class="portfolio-card placeholder-card">
+                <div class="card-badge">Disponible</div>
+                <h3>✨ Tu Próximo Sitio Web</h3>
+                <p>¿Tienes un emprendimiento? Puedo ayudarte a crear tu página para que muestres tus productos a todo el mundo.</p>
+                <button class="btn-secondary" onclick="contactarWhatsApp('Hola Pedro! Quiero crear la página web de mi emprendimiento.')">Iniciar mi Proyecto</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p><strong>Pedro Franco</strong> &bull; Creador de Sitios Web</p>
+            <p>📱 Contacto directo: <strong>3804596579</strong></p>
+            <p>&copy; 2026. Sitio alojado gratuitamente en GitHub Pages.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
